@@ -1,7 +1,6 @@
 import "./global.css"
 import {
   StatusBar,
-  StyleSheet,
   Text,
   useColorScheme,
   View,
@@ -21,16 +20,14 @@ function App() {
 
 function AppContent() {
   return (
-    <View style={styles.container}>
-      <Text>Hello, World!</Text>
+    <View className="flex-1 items-center justify-center bg-white">
+      <Text className="text-xl font-bold text-blue-500">
+        Welcome to Nativewind!
+      </Text>
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
+
 
 export default App;
