@@ -1,5 +1,6 @@
-import { PressableScale } from 'pressto';
+
 import {
+  Pressable,
   StatusBar,
   Text,
   useColorScheme,
@@ -21,12 +22,12 @@ function App() {
 function AppContent() {
   return (
     <View className="flex-1 items-center justify-center bg-white">
-      <Text className="text-xl font-bold text-red-500">
-        Welcome to Nativewind!
-      </Text>
-      <PressableScale onPress={() => {}}>
-      <Text >Press me</Text>
-    </PressableScale>
+
+      <Pressable onPress={() => console.log('.')}>
+        <Text className="text-xl font-bold text-red-500">
+          Welcome to Nativewind! 1@!
+        </Text>
+      </Pressable>
     </View>
   );
 }
